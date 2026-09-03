@@ -32,16 +32,19 @@ const websiteSchema = {
 <BaseLayout description={SITE.description}>
   <StructuredData slot="head" schema={websiteSchema} />
   <section class="hero section">
-    <p class="eyebrow">Portfolio / writing / systems notes</p>
-    <h1>Structural minimalism for careful digital work.</h1>
-    <p class="lead">
-      Astro Keel gives projects, essays, and professional notes a disciplined frame: editorial type,
-      measured rhythm, and a single accent carried through fine structural rules.
-    </p>
-    <div class="action-row" aria-label={t('home.primaryLinks')}>
-      <a class="button" href={withBase('/works/')}>{t('home.viewWorks')}</a>
-      <a class="text-link" href={withBase('/blog/')}>{t('home.readNotes')}</a>
-    </div>
+  <h1>
+    CARLOS<br />
+    FERRER
+  </h1>
+
+  <p class="lead">
+    Diseños Lumínicos · Ingeniería · Interactivos
+  </p>
+
+  <div class="action-row">
+    <a class="button" href={withBase('/works/')}>Ver proyectos</a>
+    <a class="text-link" href={withBase('/about/')}>Trayectoria</a>
+  </div>
   </section>
 
   <section class="section split-overview" aria-label={t('home.overviewLabel')}>

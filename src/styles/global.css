@@ -214,7 +214,7 @@ a:not(.brand, .button):hover {
 }
 
 .hero {
-  min-height: 64vh;
+  min-height: 48vh;
   display: grid;
   align-content: center;
   padding-block: clamp(3.5rem, 8vw, 6rem);
@@ -222,15 +222,6 @@ a:not(.brand, .button):hover {
   position: relative;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: clamp(1.5rem, 3vw, 2.5rem);
-  left: 0;
-  width: 1px;
-  height: clamp(3.5rem, 8vw, 6rem);
-  background: var(--color-accent);
-}
 
 .hero > * {
   animation: keel-enter 560ms ease both;
