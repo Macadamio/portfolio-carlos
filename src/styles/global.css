@@ -222,7 +222,6 @@ a:not(.brand, .button):hover {
   position: relative;
 }
 
-
 .hero > * {
   animation: keel-enter 560ms ease both;
 }

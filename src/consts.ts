@@ -8,9 +8,10 @@ export const SITE = {
    *  `<html lang>`, date formatting, and the RSS feed language. Dictionaries
    *  ship for `en` and `ja`; regional variants like `en-GB` reuse the base
    *  language's strings while keeping their own date format. */
-   locale: 'en',
+  locale: 'en',
   title: 'Carlos Ferrer',
-  description: 'Portfolio de Carlos Ferrer: diseños lumínicos, ingeniería y proyectos interactivos.',
+  description:
+    'Portfolio de Carlos Ferrer: diseños lumínicos, ingeniería y proyectos interactivos.',
   rssDescription: 'Proyectos y trayectoria profesional de Carlos Ferrer.',
   ogImage: '/og.jpg',
   author: 'Carlos Ferrer',
