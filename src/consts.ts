@@ -8,20 +8,13 @@ export const SITE = {
    *  `<html lang>`, date formatting, and the RSS feed language. Dictionaries
    *  ship for `en` and `ja`; regional variants like `en-GB` reuse the base
    *  language's strings while keeping their own date format. */
-  locale: 'en',
-  /** Site name — used in the header brand, <title>, and og:site_name. */
-  title: 'Astro Keel',
-  /** Default meta description for pages that don't set their own. */
-  description: 'A minimal, neutral, and modern portfolio and blog theme for Astro.',
-  /** Description of the RSS feed at /rss.xml. */
-  rssDescription: 'Notes, essays, and release logs from Astro Keel.',
-  /** Default social share image, relative to the site root (see public/). */
+   locale: 'en',
+  title: 'Carlos Ferrer',
+  description: 'Portfolio de Carlos Ferrer: diseños lumínicos, ingeniería y proyectos interactivos.',
+  rssDescription: 'Proyectos y trayectoria profesional de Carlos Ferrer.',
   ogImage: '/og.jpg',
-  /** Post author, emitted in JSON-LD BlogPosting structured data.
-   *  Leave empty ('') to omit the author field. */
-  author: 'Astro Keel',
-  /** Footer credit line. */
-  footerText: 'Built with Astro Keel.',
+  author: 'Carlos Ferrer',
+  footerText: 'Carlos Ferrer — Diseños Lumínicos · Ingeniería · Interactivos',
 } as const;
 
 /** Icons bundled with the theme — see `src/components/SocialLinks.astro`. */
@@ -38,8 +31,7 @@ export interface SocialLink {
 /** Social profiles rendered as inline SVG icons in the footer.
  *  Add or remove entries here — no template edits needed. */
 export const SOCIAL_LINKS: readonly SocialLink[] = [
-  { label: 'GitHub', href: 'https://github.com/kpab/astro-keel', icon: 'github' },
-  { label: 'RSS feed', href: '/rss.xml', icon: 'rss' },
+  { label: 'GitHub', href: 'https://github.com/Macadamio', icon: 'github' },
 ];
 
 /** Giscus — GitHub Discussions-backed comments on blog posts.
@@ -104,9 +96,7 @@ export type NavItem =
  *  localize through the UI dictionary; give a page you add yourself a literal
  *  `label` instead — one of the two is required. */
 export const NAV_ITEMS: readonly NavItem[] = [
-  { href: '/', labelKey: 'nav.home' },
-  { href: '/about/', labelKey: 'nav.about' },
-  { href: '/works/', labelKey: 'nav.works' },
-  { href: '/blog/', labelKey: 'nav.blog' },
-  { href: '/search/', labelKey: 'nav.search' },
+  { href: '/', label: 'Inicio' },
+  { href: '/works/', label: 'Proyectos' },
+  { href: '/about/', label: 'Trayectoria' },
 ];
